@@ -8,7 +8,10 @@
     <style>
         .father {
             display: flex;
-            justify-content: space-around;
+            flex-direction: column;  /* <-- axis switch */
+            justify-content: flex-end; /* <-- main axis */
+            align-items: center;  /* <-- cross axis */
+            height: 100vh;
         }
         .box {
             width: 300px;
