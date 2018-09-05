@@ -1,5 +1,7 @@
 # CSS-MASTER CSS 연습하기
 ( node, chrome , Flexbox, Grid, CSS4 )
+.father>.box*5
+
 
 ### CSS Flex
 - [x] CSS Flex Basics
@@ -9,7 +11,7 @@
 - [x] Align Self
 
 ### CSS Grid
-- [ ] CSS Grid Basics ( Row, columns and gaps)
+- [x] CSS Grid Basics ( Row, columns and gaps)
 - [ ] Auto columns, auto rows
 - [ ] Template Areas
 - [ ] fr unit, repeat
