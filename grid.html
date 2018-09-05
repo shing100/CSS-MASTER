@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,29 +9,43 @@
     <style>
         .father {
             display: grid;
-            grid-template-columns: 300px 150px;
-            grid-template-rows: 300px 120px;
+            grid-auto-rows: 200px;
             grid-gap: 5px;
-            grid-auto-columns: 60px; /* 자동 정렬 */
-            grid-auto-flow: column; /* colums 과 같이 쓰임 */
+            grid-template-areas: "header header header"
+                "content content sidebar"
+                "content content sidebar"
+                "footer footer footer"
         }
-        .box {
+
+        .first {
+            grid-area: header;
             background-color: #f1c40f;
+        }
+
+        .second {
+            grid-area: sidebar;
+            background-color: #27ae60;
+        }
+
+        .third {
+            grid-area: footer;
+            background-color: #3498db;
+        }
+
+        .fourth {
+            grid-area: content;
+            background-color: #d35400;
         }
     </style>
 </head>
+
 <body>
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="first"></div>
+        <div class="second"></div>
+        <div class="third"></div>
+        <div class="fourth"></div>
     </div>
 </body>
+
 </html>
