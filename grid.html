@@ -11,29 +11,24 @@
             display: grid;
             grid-auto-rows: 200px;
             grid-gap: 5px;
-            grid-template-areas: "header header header"
-                "content content sidebar"
-                "content content sidebar"
-                "footer footer footer"
+            /* fr == fraction */
+            /* grid-template-columns: 2fr 1fr 3fr 1fr; */
+            grid-template-columns: repeat(3, 1fr) 3fr
         }
 
         .first {
-            grid-area: header;
             background-color: #f1c40f;
         }
 
         .second {
-            grid-area: sidebar;
             background-color: #27ae60;
         }
 
         .third {
-            grid-area: footer;
             background-color: #3498db;
         }
 
         .fourth {
-            grid-area: content;
             background-color: #d35400;
         }
     </style>
