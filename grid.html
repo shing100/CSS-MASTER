@@ -9,11 +9,12 @@
     <style>
         .father {
             display: grid;
-            grid-auto-rows: 200px;
             grid-gap: 5px;
             /* fr == fraction */
             /* grid-template-columns: 2fr 1fr 3fr 1fr; */
-            grid-template-columns: repeat(3, 1fr) 3fr
+            /* grid-template-columns: minmax(200px, 2fr) repeat(3, 1fr); */
+            /* grid-template-columns: max-content repeat(3, 1fr); */
+            grid-template-columns: min-content repeat(3, 1fr);
         }
 
         .first {
@@ -36,7 +37,7 @@
 
 <body>
     <div class="father">
-        <div class="first"></div>
+        <div class="first">tlwan tjlknw ekjtnr dsamtklwe mktlmwqkl dsmfk lmsdk lfam skdlfmskd alf lkmaksdlmf akls</div>
         <div class="second"></div>
         <div class="third"></div>
         <div class="fourth"></div>
