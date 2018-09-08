@@ -9,38 +9,41 @@
     <style>
         .father {
             display: grid;
-            grid-gap: 5px;
-            /* fr == fraction */
-            /* grid-template-columns: 2fr 1fr 3fr 1fr; */
-            /* grid-template-columns: minmax(200px, 2fr) repeat(3, 1fr); */
-            /* grid-template-columns: max-content repeat(3, 1fr); */
-            grid-template-columns: min-content repeat(3, 1fr);
+            grid-gap: 10px;
+            grid-auto-rows: 100px;
+            /* auto-fit 자동 끝까지 채우기 auto--fill 은 미리 채워놓음*/
+            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) */
+            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
         }
 
-        .first {
-            background-color: #f1c40f;
-        }
-
-        .second {
-            background-color: #27ae60;
-        }
-
-        .third {
+        .box:nth-child(even) {
             background-color: #3498db;
         }
 
-        .fourth {
-            background-color: #d35400;
+        .box:nth-child(odd) {
+            background-color: #34495e;
         }
     </style>
 </head>
 
 <body>
     <div class="father">
-        <div class="first">tlwan tjlknw ekjtnr dsamtklwe mktlmwqkl dsmfk lmsdk lfam skdlfmskd alf lkmaksdlmf akls</div>
-        <div class="second"></div>
-        <div class="third"></div>
-        <div class="fourth"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
     </div>
 </body>
 
