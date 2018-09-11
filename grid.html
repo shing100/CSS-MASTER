@@ -9,41 +9,35 @@
     <style>
         .father {
             display: grid;
-            grid-gap: 10px;
             grid-auto-rows: 100px;
-            /* auto-fit 자동 끝까지 채우기 auto--fill 은 미리 채워놓음*/
-            /* grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)) */
-            grid-template-columns: repeat(auto-fill, minmax(50px, 1fr))
+            grid-gap: 5px;
+            grid-template-columns: repeat(5, 100px);
+            color: white;
+            /* 
+            * justify-content: center; 좌우
+            * align-content :  end; 상하
+            */
+            place-content: center;
+            height: 100vh;
         }
-
+        
         .box:nth-child(even) {
-            background-color: #3498db;
+             background-color: #3498db;
         }
-
-        .box:nth-child(odd) {
-            background-color: #34495e;
-        }
+          .box:nth-child(odd) {
+             background-color: #34495e;
+         }
     </style>
 </head>
 
 <body>
     <div class="father">
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
-        <div class="box"></div>
+        <div class="box">1</div>
+        <div class="box">2</div>
+        <div class="box">3</div>
+        <div class="box">4</div>
+        <div class="box">5</div>
+        <div class="box">6</div>
     </div>
 </body>
 
