@@ -11,7 +11,10 @@
             display: grid;
             grid-gap: 10px;
             grid-auto-rows: 100px;
-            grid-template-columns: repeat(5, 1fr);
+            /* 자동으로 빈칸을 채움 */
+            grid-auto-flow: dense;
+            /* grid-template-columns: [first-line] repeat(5, 1fr) [last-line]; */
+            grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [five-line] 1fr[last-line]
         }
 
         .box {
@@ -29,12 +32,9 @@
             background-color: #34495e;
         }
         .box:first-child {
-            grid-column: 1 / 4;
-            /*
-            grid-column-start: 1;
-            grid-column-end: 5;
-            */
-                }
+            grid-column-start: third-line;
+            grid-column-end: last-line;
+        }
         </style>
 </head>
 
