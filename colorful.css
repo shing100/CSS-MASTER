@@ -1,19 +1,25 @@
 :root {
-    --colorOne: #d5ecf4;
-    --colorTwo: #e5efd9;
-    --colorThree: #6db613;
-    --colorFour: #ebebeb;
-    --colorFive: #d32fd3;
-    --colorSix: #36eb1e;
-    --colorSeven: #0988af;
+    --colorOne: #8b84eb;
+    --colorTwe: #b5f5cb;
+    --colorThree: #eef8b7;
+    --colorFour: #e9fdc5;
+    --colorFive: #f86056;
+    --colorSix: #f583b3;
+    --colorSeven: #67faf3;
+}
+
+body {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin: 10%;
+    margin-top: 5%;
+    margin-bottom: 5%;
 }
 
 ul {
-    list-style: : none;
+    list-style: none;
 }
 
-ul,
-li {
+ul, li {
     margin: 0;
     padding: 0;
 }
@@ -21,11 +27,10 @@ li {
 .threeGrid {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 400px;
 }
 
 .header {
-    margin-top: 50px;
+    margin-top: 40px;
     margin-bottom: 100px;
 }
 
@@ -45,5 +50,133 @@ li {
     text-decoration: underline;
     display: block;
     margin-bottom: 10px;
-    color: rgba(0,0,0,0.4);
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.header__nav li {
+    margin-bottom: 10px;
+}
+
+.header__nav li:last-child {
+    margin-bottom: 0;
+}
+
+.grid {
+    display: grid;
+    grid-auto-rows: 200px;
+    grid-gap: 10px;
+}
+
+.grid .grid__item {
+    background-size: cover;
+    background-position: center center;
+}
+
+.grid .grid__item:first-child {
+    grid-row: span 2;
+    background-color: var(--colorOne);
+}
+
+.grid .grid__item:nth-child(2) {
+    grid-area: span 2 / span 2;
+    background-image: url(https://www.zipdeco.co.kr/upload/2016/04/25/EDITOR_201604251200066870_8KCDm);
+}
+
+.grid .grid__item:nth-child(3) {
+    font-size: 17px;
+    color: black;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--colorTwe);
+}
+
+.grid .grid__item:nth-child(4) {
+    grid-area: span 2;
+    background-image: url(http://www.futurekorea.co.kr/news/photo/201611/33884_26418_750.jpg);
+}
+
+.grid .grid__item:nth-child(5) {
+    background-color: var(--colorThree);
+}
+
+.grid .grid__item:nth-child(6) {
+    background-color: var(--colorSix);
+}
+
+.grid .grid__item:nth-child(7) {
+     background-image: url(https://t1.daumcdn.net/cfile/tistory/1661993D50B43E3630);
+}
+
+.grid .grid__item:nth-child(8) {
+    grid-area: span 2 / span 2;
+    background-image: url(http://dhcdn.design.co.kr/cms/img/2018/01/M.1517374741.1643.3.jpg)
+    
+}
+
+.grid .grid__item:nth-child(9) {
+    grid-row: span 2;
+    background-color: var(--colorFour);
+}
+
+.grid .grid__item:nth-child(10) {
+    grid-row: span 2;
+    background-color: var(--colorFive);
+}
+
+.grid .grid__item:nth-child(11) {
+    grid-area: span 2;
+    background-color: var(--colorSeven);
+    font-size: 20px;
+    display: grid;
+    place-content: center;
+    font-weight: bolder;
+    color: blueviolet;
+}
+
+.grid .grid__item:nth-child(12) {
+    grid-area: span 2;
+    background-image: url(https://t1.daumcdn.net/thumb/R1280x0/?fname=http://t1.daumcdn.net/brunch/service/user/5FP/image/7VPQ8aDerwcSqsBuEb41PHFTwB0.jpg)
+}
+
+.grid .grid__item:nth-child(13) {
+    background-color: var(--colorTwe);
+}
+
+.grid .grid__item:nth-child(13) {
+    grid-column: span 2;
+    background-color: var(--colorThree);
+}
+
+.grid .grid__item:nth-child(14) {
+    background-color: var(--colorSix);
+}
+
+.twoGrid {
+    height: 100px;
+    color: rgba(11, 17, 11, 0.842);
+}
+
+.footer {
+    margin-top: 60px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.footer .footer__column {
+    display: flex;
+    justify-content: space-around;
+}
+
+.footer__nav span {
+    font-size: 28px;
+    font-weight: bolder;
+    text-transform: uppercase;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.3);
+}
+
+.footer__nav {
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.2);
 }
