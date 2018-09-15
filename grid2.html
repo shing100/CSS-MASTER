@@ -14,7 +14,7 @@
             /* 자동으로 빈칸을 채움 */
             grid-auto-flow: dense;
             /* grid-template-columns: [first-line] repeat(5, 1fr) [last-line]; */
-            grid-template-columns: [first-line] 1fr [second-line] 1fr [third-line] 1fr [fourth-line] 1fr [five-line] 1fr[last-line]
+            grid-template-columns: repeat(5, 1fr);
         }
 
         .box {
@@ -31,11 +31,12 @@
         .box:nth-child(odd) {
             background-color: #34495e;
         }
+
         .box:first-child {
-            grid-column-start: third-line;
-            grid-column-end: last-line;
+            grid-row: span 5;
+            grid-column: span 3;
         }
-        </style>
+    </style>
 </head>
 
 <body>
