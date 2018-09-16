@@ -24,8 +24,8 @@
 - [x] Grid Column, Column Start and End
 - [x] Line Naming
 - [x] Grid Row, Row Start and End
-- [ ] Grid Area
-- [ ] Justify, Align, Place Self
+- [x] Grid Area
+- [x] Justify, Align, Place Self
 
 ### Using CSS4
 
