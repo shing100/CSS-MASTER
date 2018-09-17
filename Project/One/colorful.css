@@ -152,31 +152,22 @@ ul, li {
     background-color: var(--colorSix);
 }
 
-.twoGrid {
-    height: 100px;
-    color: rgba(11, 17, 11, 0.842);
-}
-
 .footer {
-    margin-top: 60px;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    margin: 0 auto;
+    margin-top: 45px;
+    color: rgba(11, 17, 11, 0.842);
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-.footer .footer__column {
+.footer__column {
+    font-size: 16px;
+    width: 50%;
+}
+
+.footer__nav {
     display: flex;
     justify-content: space-around;
 }
 
-.footer__nav span {
-    font-size: 28px;
-    font-weight: bolder;
-    text-transform: uppercase;
-    text-decoration: underline;
-    color: rgba(0, 0, 0, 0.3);
-}
-
-.footer__nav {
-    font-size: 20px;
-    color: rgba(0, 0, 0, 0.2);
-}
