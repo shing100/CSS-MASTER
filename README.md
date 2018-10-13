@@ -49,3 +49,15 @@
 - [ ] Practice Flexbox
 - [ ] Practice Grid
 - [ ] Exercices
+
+
+### CSS 글자 돌리기
+```css
+transform: rotate(-90deg);
+transform-origin: 20% 65%;
+color: var(--redColor);
+font-size: 90px;
+```
+
+### Image Random Site
+https://picsum.photos/1000/1000/?random
