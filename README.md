@@ -29,9 +29,9 @@
 
 ### Using CSS4
 
-- [ ] Installing Parcel
-- [ ] Configuring PostCSS
-- [ ] Testing
+- [x] Installing Parcel
+- [x] Configuring PostCSS
+- [x] Testing
 
 ### CSS4 Awesomeness
 
@@ -50,6 +50,12 @@
 - [ ] Practice Grid
 - [ ] Exercices
 
+
+### Parcel
+- npm install postcss-preset-env
+- https://postcss.org/ 
+- https://cssdb.org/
+- https://preset-env.cssdb.org/playground
 
 ### CSS 글자 돌리기
 ```css
