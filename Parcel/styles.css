@@ -1,7 +1,27 @@
-li:matches(:nth-child(even), .target){
+/* li:matches(:nth-child(even), .target){
     background-color: gray;
 }
 
 li:not(.target) {
     background-color: red;
+} */
+
+:root {
+    --awesomeColor: #2980b9;
+    --awesomeBorder: 1px solid red;
+}
+ 
+li:first-child a {
+    color: var(--awesomeColor);
+}
+
+li:last-child a {
+    border: var(--awesomeBorder);
+}
+
+
+@custom-selector :--headers h1, h2, h3, h4, h5, h6;
+
+:--headers {
+    color: blueviolet;
 }

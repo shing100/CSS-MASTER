@@ -36,8 +36,8 @@
 ### CSS4 Awesomeness
 
 - [x] :matches , :not
-- [ ] CSS Variables
-- [ ] @custom-selector
+- [x] CSS Variables
+- [x] @custom-selector
 - [ ] @custom-media
 - [ ] Media Query Ranges
 - [ ] color-mod, gray(), system-ui
