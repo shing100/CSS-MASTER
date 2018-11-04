@@ -26,10 +26,26 @@ li:last-child a {
     color: blueviolet;
 } */
 
-@custom-media --ipad-size ( 450px < width <= 850px);  
+/* @custom-media --ipad-size ( 450px < width <= 850px);  
 
 @media(--ipad-size){
     body {
         background-color: rebeccapurple;
     }
+} */
+
+h1 {
+    color: #f1c40f;
+}
+
+h1:hover {
+    color: color-mod(#e74c3c lightness(80%));
+}
+
+h2 {
+    color: grey(50);
+}
+
+h3 {
+    font-family: system-ui;
 }
