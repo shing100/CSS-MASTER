@@ -38,8 +38,8 @@
 - [x] :matches , :not
 - [x] CSS Variables
 - [x] @custom-selector
-- [ ] @custom-media
-- [ ] Media Query Ranges
+- [x] @custom-media
+- [x] Media Query Ranges
 - [ ] color-mod, gray(), system-ui
 - [ ] Nesting Rules
 

@@ -6,7 +6,7 @@ li:not(.target) {
     background-color: red;
 } */
 
-:root {
+/* :root {
     --awesomeColor: #2980b9;
     --awesomeBorder: 1px solid red;
 }
@@ -24,4 +24,12 @@ li:last-child a {
 
 :--headers {
     color: blueviolet;
+} */
+
+@custom-media --ipad-size ( 450px < width <= 850px);  
+
+@media(--ipad-size){
+    body {
+        background-color: rebeccapurple;
+    }
 }
