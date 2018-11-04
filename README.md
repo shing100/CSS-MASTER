@@ -45,9 +45,9 @@
 
 ### Conclusions
 
-- [ ] CSS Grid Kiss
-- [ ] Practice Flexbox
-- [ ] Practice Grid
+- [x] CSS Grid Kiss
+- [x] Practice Flexbox
+- [x] Practice Grid
 - [ ] Exercices
 
 
@@ -75,3 +75,7 @@ https://flatuicolors.com/
 
 ### preset-env
 https://preset-env.cssdb.org/features
+
+
+### grid kiss
+npm install postcss-grid-kiss
