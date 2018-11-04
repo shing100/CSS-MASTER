@@ -41,7 +41,7 @@
 - [x] @custom-media
 - [x] Media Query Ranges
 - [x] color-mod, gray(), system-ui
-- [ ] Nesting Rules
+- [x] Nesting Rules
 
 ### Conclusions
 
@@ -57,6 +57,7 @@
 - https://cssdb.org/
 - https://preset-env.cssdb.org/playground
 
+
 ### CSS 글자 돌리기
 ```css
 transform: rotate(-90deg);
@@ -70,3 +71,7 @@ https://picsum.photos/1000/1000/?random
 
 ### 컬러 가져오기
 https://flatuicolors.com/
+
+
+### preset-env
+https://preset-env.cssdb.org/features
