@@ -58,7 +58,7 @@ a:hover {
     height: 100%;
 }
 
-.Container .Title {
+.Title {
     text-decoration: gold;
     text-decoration-line: underline;
     font-size: 42px;
@@ -70,14 +70,9 @@ a:hover {
 
 .Container .Menu__List {
     display: grid;
-    width: 80%;
-    height: 100%;
     place-items: center;
     grid-template-columns: repeat(5, minmax(50px, 1fr));
-    grid-column-gap: 30px;
-    grid-row-gap: 30px;
     grid-gap: 30px;
-    margin-left: 10%;
 }
 
 .Menu__List .Menu__Item {
@@ -86,6 +81,7 @@ a:hover {
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 20px;
+    padding: 10px 10px 10px 10px;
 }
 
 .Menu__Item .Project__Item {
