@@ -77,7 +77,6 @@ a:hover {
 
 .Menu__List .Menu__Item {
     display: flex;
-    flex-wrap: wrap;
     flex-direction: column;
     overflow: hidden;
     margin-bottom: 20px;
